@@ -1,0 +1,7 @@
+1. Resource
+    - Infinite Scroll using react-infinite-scroll-component
+    - Css using tailwind
+    - Framework using next js
+    - Hosting using vercel
+    - API with next js 
+    - Slider with splide js
