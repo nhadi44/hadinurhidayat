@@ -2,23 +2,18 @@ import Layout from "../src/layouts/default";
 import Head from "next/head";
 import HeroBanner from "../src/components/hero/HeroBanner";
 
-import { useState, useEffect } from "react";
+import { Animated } from "react-animated-css";
 
 export default function Home() {
-  // const [data, setData] = useState(false);
-
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     setData(true);
-  //   }, 1000);
-  //   console.log(data);
-  // }, [data]);
-
   return (
     <div className="home__page">
       <Head>
-        <title>Homepage</title>
+        <title>Hadi Nurhidayat</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+        />
       </Head>
       <Layout>
         <div className="home__page">
@@ -26,9 +21,7 @@ export default function Home() {
             <div className="home__banner-hero">
               <HeroBanner />
             </div>
-            <div className="text-red-600">
-              <h1>Homepage</h1>
-            </div>
+            <section></section>
           </div>
         </div>
       </Layout>
