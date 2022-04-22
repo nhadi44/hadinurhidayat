@@ -26,7 +26,7 @@ export default function Layout(props) {
               <Navbar />
             </div>
             <main>
-              <div className="main__content bg-gray-800 py-24 px-20">
+              <div className="main__content bg-gray-800 py-24 px-4 md:py-36 md:px-20">
                 {props.children}
               </div>
             </main>
