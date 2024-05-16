@@ -1,0 +1,33 @@
+@layer components {
+    .home {
+        @apply bg-slate-950 h-screen text-white py-[8rem] font-roboto;
+
+        &__wrapper {
+            @apply px-7 lg:container lg:mx-auto w-full lg:w-full 2xl:w-1/2 h-full flex items-center;
+        }
+
+        &__helo{
+            @apply text-xl font-semibold text-amber-500 mb-3;
+        }
+
+        &__name {
+            @apply text-5xl lg:text-6xl font-bold mb-3;
+        }
+
+        &__position  {
+            @apply text-2xl font-semibold text-amber-400 mb-3 h-[1.8rem];
+        }
+
+        &__description {
+            @apply text-[16px] text-justify;
+        }
+
+        &__image{
+            @apply hidden lg:flex justify-center items-center overflow-hidden
+        }
+
+        &__particle {
+            @apply absolute top-0 left-0;
+        }
+    }
+}

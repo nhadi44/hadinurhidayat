@@ -1,0 +1,20 @@
+@layer components {
+    .tab {
+        @apply cursor-pointer px-4 py-2 border-2 border-amber-400 rounded-md;
+        &__content {
+            @apply hidden;
+        }
+
+        &__content-active {
+            @apply block;
+        }
+
+        &__active {
+            @apply bg-amber-400 text-slate-950 font-semibold;
+        }
+    }
+
+    .tabs {
+        @apply flex gap-3 mb-10;
+    }
+}

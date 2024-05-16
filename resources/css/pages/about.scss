@@ -1,0 +1,33 @@
+@layer components {
+    .about {
+        @apply bg-slate-950 text-white py-[8rem] font-roboto;
+
+        &__wrapper {
+            @apply container mx-auto;
+        }
+
+        &__section-me {
+            @apply bg-slate-900/70 mb-10 rounded-[1rem] p-10;
+        }
+
+        &__section-title {
+            @apply font-semibold text-[1.7rem] mb-6;
+        }
+
+        &__section-content {
+            @apply flex items-center h-[25rem];
+        }
+
+        &__section-content-image {
+            @apply h-[30rem];
+        }
+
+        &__section-article {
+            @apply px-5;
+        }
+
+        &__section-article-p {
+            @apply text-[1.2rem] mb-4 text-justify font-normal;
+        }
+    }
+}
