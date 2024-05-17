@@ -12,24 +12,27 @@
 
      <!-- Tab Contents -->
      <div class="tab__content" :class="{ 'tab__content-active': activeTab === 'tab1' }">
-         <h2>Content for Tab 1</h2>
-         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel sed itaque nam aliquam numquam error
-             perferendis aliquid vitae veritatis ipsa consequuntur omnis est, nesciunt laborum accusantium ab
-             praesentium tempora voluptate voluptates totam ex aut. Ratione dolor autem expedita a maiores quisquam
-             error sed nihil quae consequatur, incidunt odio rem quo, necessitatibus eos! A cupiditate natus praesentium
-             quia harum rerum repudiandae corrupti corporis nostrum atque porro earum facilis consectetur non, pariatur
-             magnam sapiente nemo iure perferendis. Placeat reiciendis velit itaque, nobis tenetur beatae cupiditate
-             minus, accusamus harum vel incidunt quas at magnam exercitationem laudantium quod, ipsam sit dolorum iure
-             possimus deserunt!</p>
+         <div class="tab__skills">
+             <div class="group tab__skills-wrapper">
+                 <img src="{{ asset('assets/icons/skills/skill-icons--javascript.svg') }}" alt=""
+                     class="h-full">
+                 <div>
+                     <h6 class="font-semibold text-lg">Javascript</h6>
+                     <span class="text-muted hidden group-hover:block">Advanced</span>
+                 </div>
+             </div>
+         </div>
      </div>
+
      <div class="tab__content" :class="{ 'tab__content-active': activeTab === 'tab2' }">
-         <h2>Content for Tab 2</h2>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius obcaecati et praesentium nam earum
-             officiis distinctio id, aspernatur doloremque ea laborum, dignissimos, ipsa nobis voluptates? Doloremque
-             aliquid maxime tempora assumenda nihil nemo dolore quod asperiores maiores sit numquam ullam eum at nobis
-             esse quia itaque, aspernatur debitis repellendus, modi nesciunt! Laboriosam magnam aspernatur consequatur
-             hic unde repellat velit cumque assumenda, odio reiciendis in esse nisi voluptas nostrum iusto officiis quam
-             natus ipsa? Voluptates facere maiores culpa nam. Cumque earum velit excepturi quasi! In, labore explicabo!
-             Fugit quas dignissimos consequatur pariatur iste quis omnis illum rerum odio? Vel, porro nostrum.</p>
+         <div class="tab__tools">
+             <div class="group tab__tools-wrapper">
+                 <img src="{{ asset('assets/icons/tools/logos--jira.svg') }}" alt="" class="h-full">
+                 <div>
+                     <h6 class="font-semibold text-lg">Jira</h6>
+                     <span class="text-muted hidden group-hover:block">Basic</span>
+                 </div>
+             </div>
+         </div>
      </div>
  </div>
