@@ -2,6 +2,7 @@
 @import "tailwindcss/components";
 @import "./components/navbar.scss";
 @import "./components/tab.scss";
+@import "./components/footer.scss";
 @import "./pages/home.scss";
 @import "./pages/about.scss";
 @import "tailwindcss/utilities";

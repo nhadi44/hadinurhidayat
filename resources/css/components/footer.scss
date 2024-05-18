@@ -1,0 +1,13 @@
+@layer components {
+    .footer {
+        @apply bg-slate-950 w-full;
+
+        &__wrapper {
+            @apply w-full lg:container mx-auto flex items-center justify-between border-t-2 border-slate-800 h-20;
+        }
+
+        &__brand {
+            @apply text-lg lg:text-xl font-bold text-amber-400;
+        }
+    }
+}
