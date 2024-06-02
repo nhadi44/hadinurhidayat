@@ -19,7 +19,9 @@
     <main>
         @yield('content')
     </main>
-
+    @if (!request()->routeIs('Home'))
+        <x-footer></x-footer>
+    @endif
     @stack('scripts')
     @vite('resources/js/app.js')
 </body>

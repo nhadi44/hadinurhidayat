@@ -1,35 +1,43 @@
  <div x-data="{ activeTab: 'tab1' }">
      <!-- Tab Titles -->
-     <div class="tabs ">
+     <div class="tabs">
          <div class="tab" :class="{ 'tab__active': activeTab === 'tab1' }" @click="activeTab = 'tab1'">
-             Tab1
+             Programming
          </div>
          <div class="tab" :class="{ 'tab__active': activeTab === 'tab2' }" @click="activeTab = 'tab2'">
-             Tab2
+             Tools
          </div>
 
      </div>
 
      <!-- Tab Contents -->
      <div class="tab__content" :class="{ 'tab__content-active': activeTab === 'tab1' }">
-         <h2>Content for Tab 1</h2>
-         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel sed itaque nam aliquam numquam error
-             perferendis aliquid vitae veritatis ipsa consequuntur omnis est, nesciunt laborum accusantium ab
-             praesentium tempora voluptate voluptates totam ex aut. Ratione dolor autem expedita a maiores quisquam
-             error sed nihil quae consequatur, incidunt odio rem quo, necessitatibus eos! A cupiditate natus praesentium
-             quia harum rerum repudiandae corrupti corporis nostrum atque porro earum facilis consectetur non, pariatur
-             magnam sapiente nemo iure perferendis. Placeat reiciendis velit itaque, nobis tenetur beatae cupiditate
-             minus, accusamus harum vel incidunt quas at magnam exercitationem laudantium quod, ipsam sit dolorum iure
-             possimus deserunt!</p>
+         <div class="grid grid-cols-5 gap-3">
+             @for ($i = 0; $i < 10; $i++)
+                 <div class="border border-amber-400 p-4 rounded-md flex items-center gap-4">
+                     <img src="{{ asset('assets/icons/skill-icons--javascript.svg') }}" alt="skills" class="h-12"
+                         loading="lazy">
+                     <div class="flex flex-col">
+                         <h1 class="text-slate-100 text-lg font-semibold">Javascript</h1>
+                         <small class="text-muted">Intermediate</small>
+                     </div>
+                 </div>
+             @endfor
+         </div>
      </div>
+
      <div class="tab__content" :class="{ 'tab__content-active': activeTab === 'tab2' }">
-         <h2>Content for Tab 2</h2>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius obcaecati et praesentium nam earum
-             officiis distinctio id, aspernatur doloremque ea laborum, dignissimos, ipsa nobis voluptates? Doloremque
-             aliquid maxime tempora assumenda nihil nemo dolore quod asperiores maiores sit numquam ullam eum at nobis
-             esse quia itaque, aspernatur debitis repellendus, modi nesciunt! Laboriosam magnam aspernatur consequatur
-             hic unde repellat velit cumque assumenda, odio reiciendis in esse nisi voluptas nostrum iusto officiis quam
-             natus ipsa? Voluptates facere maiores culpa nam. Cumque earum velit excepturi quasi! In, labore explicabo!
-             Fugit quas dignissimos consequatur pariatur iste quis omnis illum rerum odio? Vel, porro nostrum.</p>
+         <div class="grid grid-cols-5 gap-3">
+             @for ($i = 0; $i < 10; $i++)
+                 <div class="border border-amber-400 p-4 rounded-md flex items-center gap-4">
+                     <img src="{{ asset('assets/icons/logos--jira.svg') }}" alt="skills" class="h-12"
+                         loading="lazy">
+                     <div class="flex flex-col">
+                         <h1 class="text-slate-100 text-lg font-semibold">Jira</h1>
+                         <small class="text-muted">Intermediate</small>
+                     </div>
+                 </div>
+             @endfor
+         </div>
      </div>
  </div>

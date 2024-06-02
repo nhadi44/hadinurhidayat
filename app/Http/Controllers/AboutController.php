@@ -9,6 +9,6 @@ class AboutController extends Controller
     public function index()
     {
         $tabMenu = array("Tech Stack", "Tools");
-        return view('about', compact('tabMenu'));
+        return view('About', compact('tabMenu'));
     }
 }

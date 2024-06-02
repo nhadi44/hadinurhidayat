@@ -29,10 +29,11 @@
             <div class="flex-1">
                 <div class="home__image">
                     <img src="{{ asset('/assets/images/hadinurhidayat-edit.png') }}" alt="hadinurhidayat"
-                        class="z-10 h-[30rem]">
+                        class="z-10 h-[27rem]">
                 </div>
             </div>
         </div>
+        <x-footer></x-footer>
     </div>
 @endsection
 

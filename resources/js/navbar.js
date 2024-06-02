@@ -20,7 +20,7 @@ if (offcanvasClose) {
 // detect scroll position
 window.onscroll = function () {
     console.log(window.pageYOffset);
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 50) {
         navbar.classList.add("navbar__scrolled");
         navbar.classList.remove("navbar__scrolled-out");
     } else {

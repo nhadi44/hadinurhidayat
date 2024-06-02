@@ -28,9 +28,13 @@
                     </div>
                 </div>
             </section>
-            <section class="">
+            <section class="mb-16">
                 <h1 class="about__section-title">My Skils</h1>
                 <x-tab></x-tab>
+            </section>
+            <section>
+                <h1 class="about__section-title">My Experience</h1>
+                <x-experience></x-experience>
             </section>
         </div>
     </div>
