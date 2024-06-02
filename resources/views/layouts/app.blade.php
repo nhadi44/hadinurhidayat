@@ -18,6 +18,10 @@
     </header>
     <main>
         @yield('content')
+
+        @if (!request()->is('/'))
+            <x-footer></x-footer>
+        @endif
     </main>
 
     @stack('scripts')
