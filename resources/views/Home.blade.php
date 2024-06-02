@@ -33,7 +33,6 @@
                 </div>
             </div>
         </div>
-        <x-footer></x-footer>
     </div>
 @endsection
 
