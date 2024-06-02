@@ -39,3 +39,12 @@
         </div>
     </div>
 @endsection
+
+@push('scripts')
+    <script>
+        // on reaload page go to top
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        };
+    </script>
+@endpush
