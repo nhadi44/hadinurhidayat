@@ -25,6 +25,7 @@
              @endfor
          </div>
      </div>
+
      <div class="tab__content" :class="{ 'tab__content-active': activeTab === 'tab2' }">
          <div class="grid grid-cols-5 gap-3">
              @for ($i = 0; $i < 10; $i++)
