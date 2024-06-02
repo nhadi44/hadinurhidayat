@@ -1,38 +1,43 @@
  <div x-data="{ activeTab: 'tab1' }">
      <!-- Tab Titles -->
-     <div class="tabs ">
+     <div class="tabs">
          <div class="tab" :class="{ 'tab__active': activeTab === 'tab1' }" @click="activeTab = 'tab1'">
-             Tab1
+             Programming
          </div>
          <div class="tab" :class="{ 'tab__active': activeTab === 'tab2' }" @click="activeTab = 'tab2'">
-             Tab2
+             Tools
          </div>
 
      </div>
 
      <!-- Tab Contents -->
      <div class="tab__content" :class="{ 'tab__content-active': activeTab === 'tab1' }">
-         <div class="tab__skills">
-             <div class="group tab__skills-wrapper">
-                 <img src="{{ asset('assets/icons/skills/skill-icons--javascript.svg') }}" alt=""
-                     class="h-full">
-                 <div>
-                     <h6 class="font-semibold text-lg">Javascript</h6>
-                     <span class="text-muted hidden group-hover:block">Advanced</span>
+         <div class="grid grid-cols-5 gap-3">
+             @for ($i = 0; $i < 10; $i++)
+                 <div class="border border-amber-400 p-4 rounded-md flex items-center gap-4">
+                     <img src="{{ asset('assets/icons/skill-icons--javascript.svg') }}" alt="skills" class="h-12"
+                         loading="lazy">
+                     <div class="flex flex-col">
+                         <h1 class="text-slate-100 text-lg font-semibold">Javascript</h1>
+                         <small class="text-muted">Intermediate</small>
+                     </div>
                  </div>
-             </div>
+             @endfor
          </div>
      </div>
 
      <div class="tab__content" :class="{ 'tab__content-active': activeTab === 'tab2' }">
-         <div class="tab__tools">
-             <div class="group tab__tools-wrapper">
-                 <img src="{{ asset('assets/icons/tools/logos--jira.svg') }}" alt="" class="h-full">
-                 <div>
-                     <h6 class="font-semibold text-lg">Jira</h6>
-                     <span class="text-muted hidden group-hover:block">Basic</span>
+         <div class="grid grid-cols-5 gap-3">
+             @for ($i = 0; $i < 10; $i++)
+                 <div class="border border-amber-400 p-4 rounded-md flex items-center gap-4">
+                     <img src="{{ asset('assets/icons/logos--jira.svg') }}" alt="skills" class="h-12"
+                         loading="lazy">
+                     <div class="flex flex-col">
+                         <h1 class="text-slate-100 text-lg font-semibold">Jira</h1>
+                         <small class="text-muted">Intermediate</small>
+                     </div>
                  </div>
-             </div>
+             @endfor
          </div>
      </div>
  </div>

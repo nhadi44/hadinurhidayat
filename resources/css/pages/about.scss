@@ -3,23 +3,23 @@
         @apply bg-slate-950 text-white py-[8rem] font-roboto;
 
         &__wrapper {
-            @apply container mx-auto;
+            @apply container mx-auto px-5;
         }
 
         &__section-me {
-            @apply bg-slate-900/70 mb-10 rounded-[1rem] p-10;
+            @apply bg-slate-900/70 mb-10 rounded-[1rem] p-5 lg:p-10;
         }
 
         &__section-title {
-            @apply font-semibold text-[1.7rem] mb-6;
+            @apply font-semibold text-lg lg:text-[1.7rem] mb-6;
         }
 
         &__section-content {
-            @apply flex items-center h-[25rem];
+            @apply flex items-center flex-col lg:flex-row;
         }
 
         &__section-content-image {
-            @apply h-[30rem];
+            @apply h-full md:h-[20rem] lg:h-[30rem];
         }
 
         &__section-article {
@@ -27,7 +27,7 @@
         }
 
         &__section-article-p {
-            @apply text-[1.2rem] mb-4 text-justify font-normal;
+            @apply text-[14px] md:text-[16px] lg:text-[1.2rem] mb-4 text-justify font-normal;
         }
     }
 }
