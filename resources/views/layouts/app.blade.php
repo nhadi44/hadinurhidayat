@@ -18,12 +18,10 @@
     </header>
     <main>
         @yield('content')
-
-        @if (!request()->is('/'))
-            <x-footer></x-footer>
-        @endif
     </main>
-
+    @if (!request()->routeIs('Home'))
+        <x-footer></x-footer>
+    @endif
     @stack('scripts')
     @vite('resources/js/app.js')
 </body>

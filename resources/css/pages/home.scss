@@ -1,12 +1,12 @@
 @layer components {
     .home {
-        @apply bg-slate-950 h-screen text-white py-[8rem] font-roboto;
+        @apply bg-slate-950 text-white pt-[8rem] pb-[6rem] font-roboto h-screen;
 
         &__wrapper {
             @apply px-7 lg:container lg:mx-auto w-full lg:w-full 2xl:w-1/2 h-full flex items-center;
         }
 
-        &__helo{
+        &__helo {
             @apply text-xl font-semibold text-amber-500 mb-3;
         }
 
@@ -14,7 +14,7 @@
             @apply text-5xl lg:text-6xl font-bold mb-3;
         }
 
-        &__position  {
+        &__position {
             @apply text-2xl font-semibold text-amber-400 mb-3 h-[1.8rem];
         }
 
@@ -22,8 +22,8 @@
             @apply text-[16px] text-justify;
         }
 
-        &__image{
-            @apply hidden lg:flex justify-center items-center overflow-hidden
+        &__image {
+            @apply hidden lg:flex justify-center items-center overflow-hidden;
         }
 
         &__particle {
