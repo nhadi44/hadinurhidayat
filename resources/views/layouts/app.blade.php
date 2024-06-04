@@ -22,8 +22,14 @@
     @if (!request()->routeIs('Home'))
         <x-footer></x-footer>
     @endif
-    @stack('scripts')
     @vite('resources/js/app.js')
+    @stack('scripts')
+    <script>
+        // on reaload page go to top
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        };
+    </script>
 </body>
 
 </html>
