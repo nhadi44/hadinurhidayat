@@ -6,7 +6,8 @@
                 class="navbar__link {{ request()->routeIs('Home') ? 'navbar__link-active' : '' }}">Home</a>
             <a href="{{ route('About') }}"
                 class="navbar__link {{ request()->routeIs('About') ? 'navbar__link-active' : '' }}">About</a>
-            <a href="" class="navbar__link">Portfolio</a>
+            <a href="{{ route('Portfolio') }}"
+                class="navbar__link {{ request()->routeIs('Portfolio') ? 'navbar__link-active' : '' }}">Portfolio</a>
             <a href="" class="navbar__link">Blog</a>
         </div>
         <a href="" class="navbar__resume">My Resume</a>
@@ -23,8 +24,14 @@
             </button>
             <div class="flex flex-col h-full items-center justify-center">
                 <ul class="offcanvas__menu">
-                    <li class="offcanvas__menu-link {{ request()->routeIs('Home') ? 'offcanvas__menu-link-active' : '' }}"><a href="{{ route('Home') }}">Home</a></li>
-                    <li class="offcanvas__menu-link {{ request()->routeIs('About') ? 'offcanvas__menu-link-active' : '' }}"><a href="{{ route('About') }}">About</a></li>
+                    <li
+                        class="offcanvas__menu-link {{ request()->routeIs('Home') ? 'offcanvas__menu-link-active' : '' }}">
+                        <a href="{{ route('Home') }}">Home</a>
+                    </li>
+                    <li
+                        class="offcanvas__menu-link {{ request()->routeIs('About') ? 'offcanvas__menu-link-active' : '' }}">
+                        <a href="{{ route('About') }}">About</a>
+                    </li>
                     <li class="offcanvas__menu-link"><a href="">Portfolio</a></li>
                     <li class="offcanvas__menu-link"><a href="">Blog</a></li>
                     <li class="offcanvas__menu-resume"><a href="">My Resume</a></li>
